@@ -1,16 +1,12 @@
-def my_each(members)
+def my_each(array)
   i = 0
-  collection = 0 
   while i < array.length
-    collection << yield(array[i]) 
-    i += 1   
-  end   
-  collection 
+    yield(array[i])
+    i = i = 1
+  end
 end 
 
-
-
- 
+my_each(array) { |i| puts "this lab is killing me #{i}"}
 
 
 
